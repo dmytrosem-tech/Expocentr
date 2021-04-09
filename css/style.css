@@ -1,5 +1,17 @@
 :root {
+  --c-grey: #e0e0e0;
+  --c-red: #f6404f;
+  --c-dark: #2e373b;
   --c-light: #ffffff;
+
+  --bg-yellow: #ffc41e;
+  --bg-blue: #2378fc;
+  --bg-cream: #faf3e3;
+  --bg-teal: #30bcc9;
+  --bg-red: #f6404f;
+
+  --main-font: Circe;
+  --title-font: Plumb;
 }
 
 html {
@@ -13,6 +25,9 @@ html {
 }
 
 .page {
+  margin: 0;
+  font-family: var(--main-font), sans-serif;
+  color: var(--c-light);
 }
 
 .visually-hidden {
@@ -33,6 +48,7 @@ a {
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 .list {
@@ -54,11 +70,14 @@ ul {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
+  background: transparent;
+  border: none;
 }
 /* MAIN */
 
 .header-hero-bg {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  max-width: 1920px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -67,11 +86,60 @@ ul {
 
 /* header */
 
-.header-btn {
+.header {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: transparent;
-  border: none;
-  fill: aquamarine;
+  justify-content: space-between;
+  padding: 35px 180px;
+  border-bottom: 1px solid var(--c-light);
 }
+
+.logo {
+  display: block;
+  height: 24px;
+  margin-right: 310px;
+}
+
+.header-nav-list {
+  display: flex;
+}
+
+.header-nav .link {
+  color: var(--c-light);
+  font-size: 16px;
+  line-height: 135%;
+  text-align: center;
+}
+
+.header-nav-list .item + .item {
+  margin-left: 50px;
+}
+
+.search-lang-list {
+  display: flex;
+}
+
+.header-btn-search {
+  fill: var(--c-light);
+  margin-right: 70px;
+}
+
+.header-btn-lang {
+  color: var(--c-light);
+  font-size: 16px;
+  line-height: 135%;
+}
+
+/* .hero-title {
+  font-family: Plumb-bold;
+  font-size: 64px;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+.visitors-help-blocks-title {
+  font-family: var(--title-font);
+  font-size: 30px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: red;
+} */

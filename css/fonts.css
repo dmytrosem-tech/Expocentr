@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Circe-bold;
+  font-style: regular;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Circe-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Circe;
+  font-style: regular;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Circe-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: Plumb-bold;
+  font-style: regular;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/plumb-bold-webfont.woff") format("woff"),
+    url("../fonts/plumb-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Plumb;
+  font-style: regular;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/plumbcondensed-regular-webfont.woff") format("woff"),
+    url("../fonts/plumbcondensed-regular-webfont.woff2") format("woff2");
+}

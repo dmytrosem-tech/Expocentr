@@ -46,6 +46,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -72,6 +76,7 @@ ul {
   cursor: pointer;
   background: transparent;
   border: none;
+  padding: 0;
 }
 /* MAIN */
 
@@ -97,7 +102,6 @@ ul {
 .logo {
   display: block;
   height: 24px;
-  margin-right: 310px;
 }
 
 .header-nav-list {
@@ -124,19 +128,114 @@ ul {
   margin-right: 70px;
 }
 
+.header-lang-icon {
+  margin-right: 10px;
+}
+
 .header-btn-lang {
   color: var(--c-light);
   font-size: 16px;
   line-height: 135%;
+  fill: var(--c-light);
 }
 
-/* .hero-title {
+/* Hero section */
+
+.hero-box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 250px;
+  padding-bottom: 50px;
+}
+
+.hero-info {
+  flex-basis: calc(50% - 76px);
+}
+
+.hero-title {
   font-family: Plumb-bold;
-  font-size: 64px;
+  font-size: 55px;
   line-height: 160%;
   text-transform: uppercase;
 }
-.visitors-help-blocks-title {
+
+.hero-txt {
+  font-size: 24px;
+  line-height: 140%;
+  max-width: 350px;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  fill: var(--c-light);
+  color: var(--c-light);
+}
+
+.hero-btn-icon-arrow {
+  margin-left: 10px;
+}
+
+.hero-nav {
+  flex-basis: calc(50% - 76px);
+  margin-top: 55px;
+}
+
+.hero-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-nav .item {
+  padding: 30px 40px 30px 40px;
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.hero-nav .item:nth-child(1) {
+  background-color: var(--bg-blue);
+  height: 150px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.hero-nav .item:nth-child(2) {
+  background-color: var(--bg-teal);
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.hero-nav .item:nth-child(3) {
+  background-color: var(--bg-yellow);
+  height: 175px;
+  margin-right: 30px;
+}
+
+.hero-nav .item:nth-child(4) {
+  background-color: var(--bg-red);
+  height: 175px;
+}
+
+.hero-nav-title {
+  font-family: Plumb;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: var(--c-light);
+  margin-bottom: 15px;
+}
+
+.hero-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  color: var(--c-light);
+  font-size: 14px;
+  line-height: 135%;
+  fill: var(--c-light);
+}
+
+/* .visitors-help-blocks-title {
   font-family: var(--title-font);
   font-size: 30px;
   line-height: 130%;

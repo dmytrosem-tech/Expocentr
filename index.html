@@ -350,10 +350,10 @@
     </section>
 
     <section class="footer">
-      <div class="container">
+      <div class="container footer-box">
         <div class="footer nav">
           <ul class="footer-nav-list list">
-            <li class="item">
+            <li class="menu">
               <h4 class="footer-nav-list-title">О компании</h4>
               <ul class="fotter-nav-list-links list">
                 <li class="item"><a href="">О нашей компании</a></li>
@@ -362,7 +362,7 @@
                 <li class="item"><a href="">Контакты</a></li>
               </ul>
             </li>
-            <li class="item">
+            <li class="menu">
               <h4 class="footer-nav-list-title">Экспонентам</h4>
               <ul class="fotter-nav-list-links list">
                 <li class="item"><a href="">Общие условия участия</a></li>
@@ -371,7 +371,7 @@
                 <li class="item"><a href="">Забронировать гостиницу</a></li>
               </ul>
             </li>
-            <li class="item">
+            <li class="menu">
               <h4 class="footer-nav-list-title">Прессе</h4>
               <ul class="fotter-nav-list-links list">
                 <li class="item"><a href="">Аккредитация</a></li>
@@ -379,7 +379,7 @@
                 <li class="item"><a href="">Правила-аккредитации</a></li>
               </ul>
             </li>
-            <li class="item">
+            <li class="menu">
               <h4 class="footer-nav-list-title">Организаторам</h4>
               <ul class="fotter-nav-list-links list">
                 <li class="item"><a href="">Преимущества площадки</a></li>
@@ -391,7 +391,7 @@
                 <li class="item"><a href="">Документы организаторам</a></li>
               </ul>
             </li>
-            <li class="item">
+            <li class="menu">
               <h4 class="footer-nav-list-title">Посетителям</h4>
               <ul class="fotter-nav-list-links list">
                 <li class="item"><a href="">Сервисы</a></li>
@@ -400,49 +400,64 @@
                 <li class="item"><a href="">Центр деловых контактов</a></li>
               </ul>
             </li>
-            <li class="item">
+            <li class="menu">
               <h4 class="footer-nav-list-title">Приложение</h4>
               <ul class="fotter-nav-list-links list">
-                <li></li>
-                <li></li>
+                <li class="app-store-logo">
+                  <img src="./img/app-store.png" alt="app-store-logo">
+                </li>
+                <li><img src="./img/play-market.png" alt="play-market-logo"></li>
               </ul>
             </li>
           </ul>
         </div>
-        <div class="footer-socials-follow">
+        <div class="">
           <div class="footer-socials">
-            <h4 class="footer-socials-title">Мы в соц.сетях</h4>
+            <h4 class="footer-socials-title">Мы в соц. сетях</h4>
             <ul class="socials-list list">
               <li class="item">
-                <svg class="footer-socials-icon">
-                  <use href=""></use>
-                </svg>
+                <a href="">
+                  <svg class="footer-socials-icon" width="35" height="25">
+                    <use href="./img/sprite-expo.svg#icon-ytube-icon"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <svg class="footer-socials-icon">
-                  <use href=""></use>
-                </svg>
+                <a href="">
+                  <svg class="footer-socials-icon" width="44" height="25">
+                    <use href="./img/sprite-expo.svg#icon-vk-icon"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <svg class="footer-socials-icon">
-                  <use href=""></use>
-                </svg>
+                <a href="">
+                  <svg class="footer-socials-icon" width="14" height="25">
+                    <use href="./img/sprite-expo.svg#icon-facebook-icon"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <svg class="footer-socials-icon">
-                  <use href=""></use>
-                </svg>
+                <a href="">
+                  <svg class="footer-socials-icon" width="25" height="25">
+                    <use href="./img/sprite-expo.svg#icon-instagram-icon"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
-          <div class="footer-follow">
-            <h4>Подписка на новости</h4>
-            <p>
+          <label class="formfield">
+            <span class="footer-label-title">Подписка на новости</span> 
+            <span class="footer-input-txt">
               Получайте все самые последние новости о мероприятиях в
               Экспофоруме.
-            </p>
-            <input type="text" />
-          </div>
+            </span>
+            <input type="text" name="subscribe" class="footer-input" placeholder="Введите ваш e-mail"/>
+            <div class="icon">
+              <svg class="footer-input-icon" width="18" height="18">
+                <use href="./img/sprite-expo.svg#icon-rectangular-speech-bubble"></use>
+              </svg>
+            </div>
+          </label>
         </div>
       </div>
     </section>

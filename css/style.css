@@ -3,6 +3,7 @@
   --c-red: #f6404f;
   --c-dark: #2e373b;
   --c-light: #ffffff;
+  --c-yellow: #ffc41e;
 
   --bg-yellow: #ffc41e;
   --bg-blue: #2378fc;
@@ -10,8 +11,12 @@
   --bg-teal: #30bcc9;
   --bg-red: #f6404f;
 
+  --c-border: #eeeeee;
+
   --main-font: Circe;
   --title-font: Plumb;
+
+  --animation: 250ms ease-in-out;
 }
 
 html {
@@ -50,9 +55,22 @@ p {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   padding: 0;
   margin: 0;
+}
+
+img {
+  display: block;
 }
 
 .list {
@@ -144,19 +162,21 @@ ul {
 .hero-box {
   display: flex;
   justify-content: space-between;
-  padding-top: 250px;
+  padding-top: 200px;
   padding-bottom: 50px;
 }
 
 .hero-info {
   flex-basis: calc(50% - 76px);
+  height: 200px;
 }
 
 .hero-title {
   font-family: Plumb-bold;
   font-size: 55px;
-  line-height: 160%;
+  line-height: 90%;
   text-transform: uppercase;
+  margin: 0 0 35px 0;
 }
 
 .hero-txt {
@@ -179,7 +199,7 @@ ul {
 
 .hero-nav {
   flex-basis: calc(50% - 76px);
-  margin-top: 55px;
+  margin-top: 95px;
 }
 
 .hero-nav-list {
@@ -235,10 +255,288 @@ ul {
   fill: var(--c-light);
 }
 
-/* .visitors-help-blocks-title {
-  font-family: var(--title-font);
+/* Visitors-help section */
+
+.visitors-help {
+  background-color: var(--bg-blue);
+  max-width: 1920px;
+}
+
+.visitors-box {
+  padding: 75px 0 75px 0;
+}
+
+.visitors-help-blocks {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.visitors-help-blocks-title {
+  font-family: Plumb;
+  font-style: normal;
+  margin-bottom: 30px;
+  font-weight: 500;
   font-size: 30px;
   line-height: 130%;
   letter-spacing: -0.01em;
+}
+
+.visitors-help-list .button {
+  font-size: 16px;
+  line-height: 135%;
+  color: var(--c-light);
+  text-decoration: none;
+  transition: color var(--animation), text-decoration var(--animation);
+}
+
+.visitors-help-list .item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.visitors-help-list .norm {
+  text-align: left;
+}
+
+.visitors-help-list .button:hover {
+  color: var(--c-yellow);
+  text-decoration: underline;
+}
+
+/* Ivents section */
+
+.ivents {
+  background-color: var(--bg-yellow);
+  max-width: 1920px;
+}
+
+.ivents-box {
+  padding: 75px 0 75px 0;
+}
+
+.ivents-title-box {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  width: 100%;
+}
+
+.ivents-title {
+  font-family: Plumb;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: var(--c-dark);
+}
+
+.ivents-title-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 13px 0 13px;
+  width: 190px;
+  height: 40px;
+  font-family: Plumb;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 130%;
+  text-align: right;
+  letter-spacing: -0.01em;
+  text-decoration-line: underline;
+  color: var(--c-dark);
+  fill: var(--c-dark);
+  background-color: transparent;
+  border-radius: 0;
+  transition: background-color var(--animation), border-radius var(--animation);
+}
+
+.ivents-title-btn-icon {
+  margin-left: 15px;
+}
+
+.ivents-title-btn:hover {
+  border-radius: 4px;
+  background-color: var(--bg-blue);
+}
+
+.ivents-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.ivents-list .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.ivents-list .item {
+  flex-basis: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  transition: box-shadow var(--animation);
+}
+
+.ivents-list .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.ivents-list .item:nth-child(1),
+.ivents-list .item:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.ivents-list .item:nth-child(3) {
+  margin-bottom: 18px;
+}
+
+.ivents-list img {
+  display: block;
+}
+
+.ivents-card-bot-box {
+  padding-top: 20px;
+}
+
+.ivents-list .item:hover + .ivents-card-bot-box {
+  border-right: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-border);
+  border-left: 1px solid var(--c-border);
+}
+
+.ivents-date {
+  font-size: 14px;
+  line-height: 135%;
+  color: var(--c-dark);
+}
+
+.ivents-card-title {
+  margin-top: 10px;
+  font-family: Plumb;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 105%;
+  letter-spacing: -0.01em;
+  color: var(--c-red);
+}
+
+.ivents-card-descr {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 135%;
+  color: var(--c-dark);
+}
+
+/*  News section */
+
+.news {
+  max-width: 1920px;
+  background-color: var(--bg-cream);
+}
+
+.news-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 75px 0 85px 0;
+}
+
+.news-foto {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-foto-img {
+  margin-bottom: 60px;
+}
+
+.news-paper-box {
+  width: 540px;
+}
+
+.news-paper-title-box {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.news-paper-title {
+  font-family: Plumb;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 105%;
+  letter-spacing: -0.01em;
+  color: var(--c-dark);
+}
+
+.news-paper-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 18px 0 18px;
+  width: 190px;
+  height: 40px;
+  color: var(--c-dark);
+  font-family: Plumb;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 130%;
+  text-align: right;
+  letter-spacing: -0.01em;
+  text-decoration-line: underline;
+  transition: background-color var(--animation), border-radius var(--animation);
+}
+
+.news-paper-btn:hover {
+  border-radius: 4px;
+  background-color: var(--bg-yellow);
+}
+
+.news-list .link {
+  display: inline-flex;
+}
+
+.news-list .item:hover + .news-list-descr {
+  background-color: red;
+  border-top: 1px solid var(--c-border);
+  border-right: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-border);
   color: red;
-} */
+}
+
+.news-list .item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.news-list-descr {
+  margin-left: 30px;
+}
+
+.news-date {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 135%;
+  color: var(--c-red);
+}
+
+.news-txt {
+  font-family: Plumb;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: var(--c-dark);
+}
+
+.news-list-descr {
+  border: 2px solid red;
+}
+
+.news-list-descr:hover {
+  background-color: red;
+}

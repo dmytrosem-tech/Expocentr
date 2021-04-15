@@ -123,80 +123,82 @@
     </div>
 
     <section class="visitors-help">
-      <div class="container">
-        <h2 class="visitors-help-title">Помощь посетителям</h2>
+      <div class="container visitors-box">
+        <h2 class="visitors-help-title visually-hidden">Помощь посетителям</h2>
         <ul class="visitors-help-blocks list">
           <li class="item">
-            <h3 class="visitors-help-blocks">Организаторам</h3>
+            <h3 class="visitors-help-blocks-title">Организаторам</h3>
             <ul class="visitors-help-list list">
               <li class="item">
-                <button>Документы организаторам</button>
+                <button class="button norm">Документы организаторам</button>
               </li>
               <li class="item">
-                <button>Услуги организаторам</button>
+                <button class="button">Услуги организаторам</button>
               </li>
               <li class="item">
-                <button>Выставочные площади</button>
+                <button class="button">Выставочные площади</button>
               </li>
               <li class="item">
-                <button>Рестораны и кафе</button>
+                <button class="button">Рестораны и кафе</button>
               </li>
               <li class="item">
-                <button>Конгресс-центр</button>
+                <button class="button">Конгресс-центр</button>
               </li>
               <li class="item">
-                <button>Спорт-центр</button>
+                <button class="button">Спорт-центр</button>
               </li>
             </ul>
           </li>
           <li class="item">
-            <h3>Экспонентам</h3>
+            <h3 class="visitors-help-blocks-title">Экспонентам</h3>
             <ul class="visitors-help-list list">
               <li class="item">
-                <button>Общие условия участия</button>
+                <button class="button">Общие условия участия</button>
               </li>
               <li class="item">
-                <button>Услуги экспонентам</button>
+                <button class="button">Услуги экспонентам</button>
               </li>
               <li class="item">
-                <button>Документы экспонентам</button>
+                <button class="button">Документы экспонентам</button>
               </li>
               <li class="item">
-                <button>Центр деловых контактов</button>
+                <button class="button">Центр деловых контактов</button>
               </li>
               <li class="item">
-                <button>Забронировать гостиницу</button>
+                <button class="button">Забронировать гостиницу</button>
               </li>
             </ul>
           </li>
           <li class="item">
-            <h3>Посетителям</h3>
+            <h3 class="visitors-help-blocks-title">Посетителям</h3>
             <ul class="visitors-help-list list">
               <li class="item">
-                <button>Сервисы</button>
+                <button class="button">Сервисы</button>
               </li>
               <li class="item">
-                <button>Онлайн-регистрация на мероприятие</button>
+                <button class="button norm">
+                  Онлайн-регистрация <br />на мероприятие
+                </button>
               </li>
               <li class="item">
-                <button>Забронировать гостиницу</button>
+                <button class="button">Забронировать гостиницу</button>
               </li>
               <li class="item">
-                <button>Центр деловых контактов</button>
+                <button class="button">Центр деловых контактов</button>
               </li>
             </ul>
           </li>
           <li class="item">
-            <h3>Прессе</h3>
+            <h3 class="visitors-help-blocks-title">Прессе</h3>
             <ul class="visitors-help-list list">
               <li class="item">
-                <button>Аккредитация</button>
+                <button class="button">Аккредитация</button>
               </li>
               <li class="item">
-                <button>Пресс-служба</button>
+                <button class="button">Пресс-служба</button>
               </li>
               <li class="item">
-                <button>Правила аккредитации</button>
+                <button class="button">Правила аккредитации</button>
               </li>
             </ul>
           </li>
@@ -205,78 +207,144 @@
     </section>
 
     <section class="ivents">
-      <div class="container">
-        <h3>Текущие и будущие мероприятия</h3>
-        <p>Все мероприятия</p>
+      <div class="container ivents-box">
+        <div class="ivents-title-box">
+          <h3 class="ivents-title">Текущие и будущие мероприятия</h3>
+          <button class="button ivents-title-btn">
+            Все мероприятия
+            <svg class="ivents-title-btn-icon" width="25" height="12">
+              <use href="./img/sprite-expo.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
         <ul class="ivents-list list">
           <li class="item">
-            <img src="./img/йолка.jpg" alt="экспо-елка" />
-            <p>2 января 2020 г. – 7 января 2020 г.</p>
-            <h4>ЭКСПО ЕЛКА</h4>
-            <p>Парк интерактивных развлечений</p>
+            <a href="">
+              <img src="./img/йолка.jpg" alt="экспо-елка" />
+              <div class="ivents-card-bot-box">
+                <p class="ivents-date">2 января 2020 г. – 7 января 2020 г.</p>
+                <h4 class="ivents-card-title">ЭКСПО ЕЛКА</h4>
+                <p class="ivents-card-descr">Парк интерактивных развлечений</p>
+              </div>
+            </a>
           </li>
           <li class="item">
-            <img src="./img/Junwex.jpg" alt="Junwex" />
-            <p>5 февраля 2020 г. – 9 февраля 2020 г.</p>
-            <h4>Junwex Петербург</h4>
-            <p>Выставка ювелирных изделий</p>
+            <a href="">
+              <img src="./img/Junwex.jpg" alt="Junwex" />
+              <div class="ivents-card-bot-box">
+                <p class="ivents-date">5 февраля 2020 г. – 9 февраля 2020 г.</p>
+                <h4 class="ivents-card-title">Junwex Петербург</h4>
+                <p class="ivents-card-descr">Выставка ювелирных изделий</p>
+              </div>
+            </a>
           </li>
           <li class="item">
-            <img src="./img/невский-ларец.jpg" alt="logo" />
-            <p>7 февраля 2020 г. – 9 февраля 2020 г.</p>
-            <h4>Невский ларец</h4>
-            <p>Выставка-ярмарка народных художественных промыслов и ремесел</p>
+            <a href="">
+              <img src="./img/невский-ларец.jpg" alt="logo" />
+              <div class="ivents-card-bot-box">
+                <p class="ivents-date">7 февраля 2020 г. – 9 февраля 2020 г.</p>
+                <h4 class="ivents-card-title">Невский ларец</h4>
+                <p class="ivents-card-descr">
+                  Выставка-ярмарка народных художественных промыслов и ремесел
+                </p>
+              </div>
+            </a>
           </li>
           <li class="item">
-            <img src="./img/понаехали.jpg" alt="logo" />
-            <p>14 февраля 2020 г. – 23 февраля 2020 г.</p>
-            <h4>ПОНАЕХАЛИ!</h4>
-            <p>Специализированная арт-ярмарка</p>
+            <a href="">
+              <img src="./img/понаехали.jpg" alt="logo" />
+              <div class="ivents-card-bot-box">
+                <p class="ivents-date">
+                  14 февраля 2020 г. – 23 февраля 2020 г.
+                </p>
+                <h4 class="ivents-card-title">ПОНАЕХАЛИ!</h4>
+                <p class="ivents-card-descr">Специализированная арт-ярмарка</p>
+              </div>
+            </a>
           </li>
           <li class="item">
-            <img src="./img/веткамп.jpg" alt="VET-CAMP" />
-            <p>18 февраля 2020 г. – 21 февраля 2020 г.</p>
-            <h4>VET.CAMP</h4>
-            <p>Конференция для ветеринарных врачей</p>
+            <a href="">
+              <img src="./img/веткамп.jpg" alt="VET-CAMP" />
+              <div class="ivents-card-bot-box">
+                <p class="ivents-date">
+                  18 февраля 2020 г. – 21 февраля 2020 г.
+                </p>
+                <h4 class="ivents-card-title">VET.CAMP</h4>
+                <p class="ivents-card-descr">
+                  Конференция для ветеринарных врачей
+                </p>
+              </div>
+            </a>
           </li>
           <li class="item">
-            <img src="./img/horeca.jpg" alt="Horeca" />
-            <p>26 февраля 2020 г. – 28 февраля 2020 г.</p>
-            <h4>ExpoHoReCa</h4>
-            <p>Специализированная выставка</p>
+            <a href="">
+              <img src="./img/horeca.jpg" alt="Horeca" />
+              <div class="ivents-card-bot-box">
+                <p class="ivents-date">
+                  26 февраля 2020 г. – 28 февраля 2020 г.
+                </p>
+                <h4 class="ivents-card-title">ExpoHoReCa</h4>
+                <p class="ivents-card-descr">Специализированная выставка</p>
+              </div>
+            </a>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="news">
-      <div class="container">
-        <div class="foto-images">
-          <img src="./img/parcing.jpg" alt="parking" />
+      <div class="container news-box">
+        <div class="news-foto">
+          <img src="./img/parcing.jpg" alt="parking" class="news-foto-img" />
           <img src="./img/йолка-ивент.jpg" alt="img-ivent-news" />
         </div>
-        <div>
-          <h3>Новости</h3>
-          <button>Все новости</button>
-        </div>
-        <div>
-          <ul class="new-list list">
-            <li class="item">
-              <img src="./img/новости1.jpg" alt="" />
-              <p>4 января 2020 г.</p>
-              <p>Как объединилась реальность и виртуальность – LIKEE PARTY</p>
-            </li>
-            <li class="item">
-              <img src="./img/новости2.jpg" alt="" />
-              <p>2 января 2020 г.</p>
-              <p>Как объединилась реальность и виртуальность – LIKEE PARTY</p>
-            </li>
-            <li class="item">
-              <img src="./img/нвоости3.jpg" alt="" />
-              <p>2 января 2020 г.</p>
-              <p>Как объединилась реальность и виртуальность – LIKEE PARTY</p>
-            </li>
-          </ul>
+        <div class="news-paper-box">
+          <div class="news-paper-title-box">
+            <h3 class="news-paper-title">Новости</h3>
+            <button class="button news-paper-btn">
+              Все новости
+              <svg class="ivents-title-btn-icon" width="25" height="12">
+                <use href="./img/sprite-expo.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="news-paper-today">
+            <ul class="news-list list">
+              <li class="item">
+                <a href="" class="link">
+                  <img src="./img/новости1.jpg" alt="" />
+                  <div class="news-list-descr">
+                    <p class="news-date">4 января 2020 г.</p>
+                    <p class="news-txt">
+                      Как объединилась реальность и виртуальность – LIKEE PARTY
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="link">
+                  <img src="./img/новости2.jpg" alt="" />
+                  <div class="news-list-descr">
+                    <p class="news-date">2 января 2020 г.</p>
+                    <p class="news-txt">
+                      Как объединилась реальность и виртуальность – LIKEE PARTY
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="link">
+                  <img src="./img/нвоости3.jpg" alt="" />
+                  <div class="news-list-descr">
+                    <p class="news-date">2 января 2020 г.</p>
+                    <p class="news-txt">
+                      Как объединилась реальность и виртуальность – LIKEE PARTY
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

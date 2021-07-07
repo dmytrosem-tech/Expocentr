@@ -731,4 +731,17 @@ p {
   }
 }
 
+.btn-test {
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  display: block;
+  background-image: url(../img/unnamed.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+ background-color: transparent;
+ border: none;
+}
+
 
